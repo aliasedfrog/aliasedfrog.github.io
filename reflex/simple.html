@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+<head th:fragment="headTag">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<link
+	href="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/smoothness/jquery-ui.css"
+	rel="stylesheet" />
+<link
+	href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap.min.css"
+	rel="stylesheet" />
+
+<script src="http://aliasedfrog.github.io/javascripts/benrcoulston.us.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<link href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css"
+	rel="stylesheet" />
+
+<script
+	src="//benrcoulston.github.io/javascripts/jquery.dataTables.min.js"></script>
+<script src='//my.mobfox.com/ad.js'></script>
+<link href="http://aliasedfrog.github.io/stylesheets/layout.css" rel="stylesheet" />
+<meta charset="UTF-8">
+
+</meta>
+<title>Simple Reflex Browser</title>
+</head>
+<body>
+	<div>
+
+		<script src="http://aliasedfrog.github.io/javascripts/sdt.min.js"></script>
+		<script>
+			(function(i, s, o, g, r, a, m) {
+	            i['GoogleAnalyticsObject'] = r;
+	            i[r] = i[r] || function() {
+		            (i[r].q = i[r].q || []).push(arguments)
+	            }, i[r].l = 1 * new Date();
+	            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+	            a.async = 1;
+	            a.src = g;
+	            m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-53012077-12', 'auto');
+            ga('send', 'pageview');
+		</script>
+		<div class="row">
+			<div class="span12">
+				<div class="navbar" style="margin: 1%;">
+					<div class="navbar-inner">
+						<div class="row">
+							<ul class="nav pull-left">
+								<li style="padding-right: 0; margin-right: 0;"><a
+									class="nav" href="http://www.reflexfps.net"><img
+										src="http://aliasedfrog.github.io/images/reflexlogodarkmenubar1.png" width="64" /></a></li>
+								<li><a class="nav disabled" id="pplOnline" /></li>
+								<li><a class="nav disabled" id="svrOnline" /></li>
+								<li><a class="nav disabled" id="mapsTotal" /></li>
+							</ul>
+						</div>
+						<div class="row">
+							<ul class="nav pull-left">
+								<li style="padding: 0;"><a class="nav"
+									href="http://www.reflexfiles.com">ReflexFiles</a></li>
+							</ul>
+							<ul class="nav pull-right">
+								<!-- Sign in -->
+								<li><a class="nav" href="http://aliasedfrog.github.io/reflex/simple.html">Simple Servers
+										Browser</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row centered">
+			<div class="header">
+				<div id="includeMenu"></div>
+			</div>
+		</div>
+		<div class="header centered">
+			<h6>Server list and page is refreshed every 2 minutes for now.
+				Player list is broken due to reflex only sends back 1 valid player,
+				you can also search by map , will only show servers that have seen
+				that map during query's</h6>
+		</div>
+	</div>
+
+	<div class="row"
+		style="width: 1400px; margin-left: auto; margin-right: auto">
+		<div class="span8" style="width: 1050px;">
+			<table
+				class="table table-striped table-bordered table-hover table-condensed"
+				id="sdt" style="width: 1025px;">
+				<thead style="width: 1025px;">
+				</thead>
+			</table>
+		</div>
+		<div class="span4" style="width: 275px; margin-left: 25px;">
+
+			<div id="sidtheader"></div>
+			<table
+				class="table table-striped table-bordered table-hover table-condensed"
+				id="sidt" style="width: 255px;">
+				<thead>
+				</thead>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
