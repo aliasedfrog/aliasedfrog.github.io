@@ -1,0 +1,24 @@
+<!-- 
+requires url params, atm.
+ i.e.(http://blah.com/loadme.html?name=dp4&width=800), ?name=dp4 is a param.
+ current looks ups are by, 'name', 'id'.
+ only thing i built while setting this up was a max-width setting, pass in para 'width=800' 800 is in css px 
+
+usage example. insert into html. place <div> with ID 'mapstats' where ever. open page with "www.blah.com/mapstats.html?name=dp4&width=800"
+ -->
+
+<html>
+
+<head>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<title>Test Widget Page</title>
+</head>
+<body>
+	<!--  place in head or start of body so it doesn't wrek css or cause a page reload -->
+
+	<script src="http://localhost:8080/resources/js/map.panel.loader.js"></script>
+
+	<!-- DOM to hold the map stat stuffage -->
+	<div class="container" id="mapstats"></div>
+</body>
+</html>
